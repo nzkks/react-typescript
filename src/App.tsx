@@ -1,6 +1,7 @@
 import './App.css';
 import { Greet } from './components/props/Greet';
 import { Person } from './components/props/Person';
+import { PersonList } from './components/props/PersonList';
 
 function App() {
   const personName = {
@@ -8,10 +9,26 @@ function App() {
     last: 'Wayne'
   };
 
+  const nameList = [
+    {
+      first: 'Bruce',
+      last: 'Wayne'
+    },
+    {
+      first: 'Clark',
+      last: 'Kent'
+    },
+    {
+      first: 'Princess',
+      last: 'Diana'
+    }
+  ];
+
   return (
     <>
       <Greet name="NZKKS" messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
+      <PersonList names={nameList} />
     </>
   );
 }
