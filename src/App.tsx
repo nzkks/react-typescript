@@ -1,4 +1,5 @@
 import './App.css';
+import { Button } from './components/props/Button';
 import { Greet } from './components/props/Greet';
 import { Heading } from './components/props/Heading';
 import { Oscar } from './components/props/Oscar';
@@ -38,6 +39,11 @@ function App() {
         <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
       </Oscar>
       <Greet isLoggedIn={false} />
+      <Button
+        handleClick={() => {
+          console.log('Button clicked!');
+        }}
+      />
     </>
   );
 }
