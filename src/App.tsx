@@ -1,5 +1,6 @@
 import './App.css';
 import { Greet } from './components/props/Greet';
+import { Heading } from './components/props/Heading';
 import { Person } from './components/props/Person';
 import { PersonList } from './components/props/PersonList';
 import { Status } from './components/props/Status';
@@ -31,6 +32,7 @@ function App() {
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="success" />
+      <Heading>Placeholder text</Heading>
     </>
   );
 }
