@@ -37,6 +37,7 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to Leonardo Dicaprio!</Heading>
       </Oscar>
+      <Greet isLoggedIn={false} />
     </>
   );
 }
