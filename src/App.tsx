@@ -8,6 +8,8 @@ import { Oscar } from './components/props/Oscar';
 import { Person } from './components/props/Person';
 import { PersonList } from './components/props/PersonList';
 import { Status } from './components/props/Status';
+import { LoggedIn } from './components/state/LoggedIn';
+import { User } from './components/state/User';
 
 function App() {
   const personName = {
@@ -48,6 +50,8 @@ function App() {
       />
       <Input value="" />
       <Container styles={{ border: '1px solid black', padding: '1rem', margin: 10 }} />
+      <LoggedIn />
+      <User />
     </>
   );
 }
