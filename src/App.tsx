@@ -1,5 +1,6 @@
 import './App.css';
 import { Button } from './components/props/Button';
+import { Container } from './components/props/Container';
 import { Greet } from './components/props/Greet';
 import { Heading } from './components/props/Heading';
 import { Input } from './components/props/Input';
@@ -46,6 +47,7 @@ function App() {
         }}
       />
       <Input value="" />
+      <Container styles={{ border: '1px solid black', padding: '1rem', margin: 10 }} />
     </>
   );
 }
