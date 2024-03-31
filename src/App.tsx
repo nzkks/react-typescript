@@ -2,6 +2,7 @@ import './App.css';
 import { Button } from './components/props/Button';
 import { Greet } from './components/props/Greet';
 import { Heading } from './components/props/Heading';
+import { Input } from './components/props/Input';
 import { Oscar } from './components/props/Oscar';
 import { Person } from './components/props/Person';
 import { PersonList } from './components/props/PersonList';
@@ -44,6 +45,7 @@ function App() {
           console.log('Button clicked!', e, id);
         }}
       />
+      <Input value="" handleChange={event => console.log(event)} />
     </>
   );
 }
