@@ -1,6 +1,7 @@
 import './App.css';
 import { Box } from './components/context/Box';
 import { ThemeContextProvider } from './components/context/ThemeContext';
+import { UserContextProvider } from './components/context/UserContext';
 import { Button } from './components/props/Button';
 import { Container } from './components/props/Container';
 import { Greet } from './components/props/Greet';
@@ -13,6 +14,7 @@ import { Status } from './components/props/Status';
 import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggedIn';
 import { User } from './components/state/User';
+import { User as ExampleUserForContext } from './components/context/User';
 
 function App() {
   const personName = {
@@ -57,6 +59,9 @@ function App() {
       <User />
       <Counter />
       <Box />
+      <UserContextProvider>
+        <ExampleUserForContext />
+      </UserContextProvider>
     </ThemeContextProvider>
   );
 }
