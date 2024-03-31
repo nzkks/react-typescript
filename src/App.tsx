@@ -45,7 +45,7 @@ function App() {
           console.log('Button clicked!', e, id);
         }}
       />
-      <Input value="" handleChange={event => console.log(event)} />
+      <Input value="" />
     </>
   );
 }
