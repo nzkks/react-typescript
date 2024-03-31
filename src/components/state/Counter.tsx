@@ -9,7 +9,7 @@ const initialState = {
 };
 
 type CounterAction = {
-  type: string;
+  type: 'increment' | 'decrement';
   payload: number;
 };
 
