@@ -6,7 +6,8 @@ type AuthUser = {
 };
 
 export const User = () => {
-  const [user, setUser] = useState<AuthUser | null>(null);
+  // const [user, setUser] = useState<AuthUser | null>(null);
+  const [user, setUser] = useState<AuthUser>({} as AuthUser); // if we are confident that the user will be initialized soon after login, we can trick typescript that the empty object has the specified type
 
   const handleLogin = () => {
     setUser({
@@ -14,16 +15,12 @@ export const User = () => {
       email: 'jakie@kungfu.com'
     });
   };
-  const handleLogout = () => {
-    setUser(null);
-  };
 
   return (
     <div>
       <button onClick={handleLogin}>Login</button>
-      <button onClick={handleLogout}>Logout</button>
       <div>
-        User name is {user?.name} and email is {user?.email}
+        User name is {user.name} and email is {user.email}
       </div>
     </div>
   );
