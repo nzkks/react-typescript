@@ -1,8 +1,4 @@
-type GreetProps = {
-  name?: string;
-  messageCount?: number;
-  isLoggedIn: boolean;
-};
+import { GreetProps } from './Greet.types';
 
 export const Greet = (props: GreetProps) => {
   const { messageCount = 0 } = props;
