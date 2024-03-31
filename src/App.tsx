@@ -1,4 +1,6 @@
 import './App.css';
+import { Box } from './components/context/Box';
+import { ThemeContextProvider } from './components/context/ThemeContext';
 import { Button } from './components/props/Button';
 import { Container } from './components/props/Container';
 import { Greet } from './components/props/Greet';
@@ -34,7 +36,7 @@ function App() {
   ];
 
   return (
-    <>
+    <ThemeContextProvider>
       <Greet name="NZKKS" messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
@@ -54,7 +56,8 @@ function App() {
       <LoggedIn />
       <User />
       <Counter />
-    </>
+      <Box />
+    </ThemeContextProvider>
   );
 }
 
