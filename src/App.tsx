@@ -18,6 +18,8 @@ import { User as ExampleUserForContext } from './components/context/User';
 import { DomRef } from './components/ref/DomRef';
 import { MutableRef } from './components/ref/MutableRef';
 import { Counter as CounterClass } from './components/class/Counter';
+import { Profile } from './components/auth/Profile';
+import { Private } from './components/auth/Private';
 
 function App() {
   const personName = {
@@ -68,6 +70,7 @@ function App() {
       <DomRef />
       <MutableRef />
       <CounterClass message="The Count value is " />
+      <Private isLoggedIn={true} component={Profile} />
     </ThemeContextProvider>
   );
 }
