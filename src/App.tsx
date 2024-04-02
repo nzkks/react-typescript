@@ -15,6 +15,7 @@ import { Counter } from './components/state/Counter';
 import { LoggedIn } from './components/state/LoggedIn';
 import { User } from './components/state/User';
 import { User as ExampleUserForContext } from './components/context/User';
+import { DomRef } from './components/ref/DomRef';
 
 function App() {
   const personName = {
@@ -62,6 +63,7 @@ function App() {
       <UserContextProvider>
         <ExampleUserForContext />
       </UserContextProvider>
+      <DomRef />
     </ThemeContextProvider>
   );
 }
