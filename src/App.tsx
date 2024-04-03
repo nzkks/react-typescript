@@ -25,6 +25,7 @@ import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/templateLiterals/Toast';
 import { CustomButton } from './components/html/Button';
 import { CustomInput } from './components/html/Input';
+import { CustomComponent } from './components/html/CustomComponent';
 
 function App() {
   const personName = {
@@ -102,6 +103,7 @@ function App() {
         Primary button
       </CustomButton>
       <CustomInput />
+      <CustomComponent name="NZKKS" messageCount={20} isLoggedIn={true} />
     </ThemeContextProvider>
   );
 }
