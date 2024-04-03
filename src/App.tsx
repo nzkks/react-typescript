@@ -26,6 +26,7 @@ import { Toast } from './components/templateLiterals/Toast';
 import { CustomButton } from './components/html/Button';
 import { CustomInput } from './components/html/Input';
 import { CustomComponent } from './components/html/CustomComponent';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
   const personName = {
@@ -104,6 +105,15 @@ function App() {
       </CustomButton>
       <CustomInput />
       <CustomComponent name="NZKKS" messageCount={20} isLoggedIn={true} />
+      <Text as="h3" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="secondary">
+        Label
+      </Text>
     </ThemeContextProvider>
   );
 }
