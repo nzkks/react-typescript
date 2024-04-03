@@ -90,7 +90,7 @@ function App() {
       <List items={[1, 2, 3]} onClick={item => console.log(item)} />
       {/* <List items={typedNameList} onClick={item => console.log(item)} /> */} {/* For later */}
       <RandomNumber value={23} isPositive />
-      <Toast position="center-center" />
+      <Toast position="center" />
     </ThemeContextProvider>
   );
 }
