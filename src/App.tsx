@@ -74,14 +74,6 @@ function App() {
       <Private isLoggedIn={true} component={Profile} />
       <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={item => console.log(item)} />
       <List items={[1, 2, 3]} onClick={item => console.log(item)} />
-      <List
-        items={[
-          { name: 'Batman', age: 50 },
-          { name: 'Superman', age: 250 },
-          { name: 'Wonder Woman', age: 200 }
-        ]}
-        onClick={item => console.log(item)}
-      />
     </ThemeContextProvider>
   );
 }
