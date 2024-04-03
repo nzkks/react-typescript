@@ -43,6 +43,18 @@ function App() {
     }
   ];
 
+  type Hero = {
+    id: number;
+    name: string;
+    age: number;
+  };
+
+  const typedNameList: Hero[] = [
+    { id: 1, name: 'Batman', age: 50 },
+    { id: 2, name: 'Superman', age: 250 },
+    { id: 3, name: 'Wonder Woman', age: 200 }
+  ];
+
   return (
     <ThemeContextProvider>
       <Greet name="NZKKS" messageCount={20} isLoggedIn={true} />
@@ -74,6 +86,7 @@ function App() {
       <Private isLoggedIn={true} component={Profile} />
       <List items={['Batman', 'Superman', 'Wonder Woman']} onClick={item => console.log(item)} />
       <List items={[1, 2, 3]} onClick={item => console.log(item)} />
+      <List items={typedNameList} onClick={item => console.log(item)} />
     </ThemeContextProvider>
   );
 }
