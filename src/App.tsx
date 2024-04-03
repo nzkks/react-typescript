@@ -93,8 +93,13 @@ function App() {
       {/* <List items={typedNameList} onClick={item => console.log(item)} /> */} {/* For later */}
       <RandomNumber value={23} isPositive />
       <Toast position="center" />
+      {/* <CustomButton variant="primary" onClick={() => console.log('clicked')}>
+        <div>Primary Button</div>
+        To avoid adding anything other than a string content as chldren for example, in Typescript, 'omit' keyword can be used 
+        Primary button
+      </CustomButton>*/}
       <CustomButton variant="primary" onClick={() => console.log('clicked')}>
-        Primary Button
+        Primary button
       </CustomButton>
       <CustomInput />
     </ThemeContextProvider>
